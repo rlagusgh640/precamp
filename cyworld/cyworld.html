@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/b3582353de.js" crossorigin="anonymous"></script>
+  <script src="./cyworld.js"></script>
+  <link href="./cyworld.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <div class="backGround">
+
+    <div class="outerBox">
+        <div class="wrapper">
+          <div class="wrapper_left">
+            <div class="wrapper_left_header">
+              <div class="today">
+                <span>Today</span>
+                <span>0</span>
+                <span> | Total</span>
+                <span> 12345</span>
+              </div>
+            </div>
+            <div class="wrapper_left_body">
+
+              <div class="left_wrapper_head">
+                <div class="left_wrapper_haed_gray">
+
+                </div>
+                <div class="left_wrapper_head_line">
+
+                </div>
+              </div>
+
+              <div class="left_wrapper_profile">
+                <div class="pro_detail">
+                  <i class="fa-solid fa-arrow-up"></i>사용자
+                </div>
+                <div class="pro_detail">
+                  <i class="fa-regular fa-user"></i>사용자
+                </div>
+                <div class="pro_detail">
+                  <i class="fa-regular fa-user"></i>사용자
+                </div>
+                <div class="pro_detail">
+                  <i class="fa-regular fa-user"></i>사용자
+                </div>
+              </div>
+              <div class="left_wrapper_footer">
+                <div class="wrapper_footer_today">
+                  <div class="footer_title">오늘의기분
+
+                  </div>
+                  <select class="footer_feel">
+                      <option>기쁨</option>
+                      <option>슬픔</option>
+                      <option>화남</option>
+                      <option>생각</option>
+                      
+                  </select>
+                 
+                </div>
+                
+              </div>
+            </div>
+
+             
+          </div>
+
+          <div class="wrapper_right">
+            <div class="wrapper__right__header">
+              <div class="right__header__title">
+                사이좋은 사람들,싸이월드
+              </div>
+              <div class="right__header__setting">
+                사생활 보호설정
+              </div>
+            </div>
+
+            <div class="wrapper__right__body">
+              <iframe id="contentFrame" src="./home.html"></iframe>
+            </div>
+
+          </div>
+
+          <div class="navigation">
+            <div class="navigation_item" id="menuHome" onclick="menuHome()">홈</div>
+            <div class="navigation_item" id="menuJuke" onclick="menuJuke()">쥬크박스</div>
+            <div class="navigation_item" id="menuGame" onclick="menuGame()">게임</div>
+          </div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game</title>
+  <link href="./game.css" rel="stylesheet">
+  <script src="./game.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+      <div class="wrapper_header">
+        <div class="header_title">
+          <div class="title">Game</div>
+          <div class="sub_title">Today Choice</div>
+        </div>
+
+        <div class="div_line">
+
+        </div>
+      </div>
+
+      
+      <div class="game_container">
+        <img src="../images/Group.png">
+        <div class="game_title">끝말잇기</div>
+        <div class="game_subtitle">제시어 :<span id="word">코드캠프</span></div>
+        <div class="word_text">
+          <input class="textbox" id="myword">
+          <button class="search" onclick="startWord()">입력</button>
+        </div>
+        <div class="word_result" id="result">결과</div>
+      </div>
+
+
+      <div class="game_container">
+        <img src="../images/Vector.png">
+        <div class="game_title">LOTTO</div>
+        <div class="game_subtitle">버튼을 누르세요</div>
+        <div class="lotto_number">
+          <span>3</span>
+          <span>31</span>
+          <span>32</span>
+          <span>34</span>
+          <span>13</span>
+          <span>23</span>
+        </div>
+        <button onclick="lottoButton()" class="lotto_button">Button</button>
+      </div>
+
+
+    </div>
+</body>
+</html>

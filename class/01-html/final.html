@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../03-javascript/final.js"></script>
+  <link href="../02-css/final.css" rel="stylesheet">
+
+  <title>Document</title>
+</head>
+<body>
+  <div class="wrapper">
+    <h3>코드캠프 회원 가입</h3>
+    
+      <input type="text" class="inputBox" id="email" placeholder="이메일을 입력해 주세요">
+    
+      <div class="error" id="error__email"></div>
+    
+      <input type="text" class="inputBox" id="name" placeholder="이름을 입력하세요">
+    
+      <div class="error" id="error__name"></div>
+    
+      <input type="text" class="inputBox" id="pw1" placeholder="패스워드를 입력해주세요">
+    
+      <div class="error" id="error__pw1"></div>
+    
+      <input type="text" class="inputBox" id="pw2" placeholder="패스워드를 다시입력해주세요">
+      <div class="error" id="error__pw2"></div>
+
+    <div class="phone__wrapper">
+      <input id="phone1" class="phoneNum" type="text" oninput="changeP1()" maxlength="3" > -
+      <input id="phone2" class="phoneNum" oninput="changeP2()" maxlength="4"> -
+      <input id="phone3" class="phoneNum" oninput="changeP3()" maxlength="4">
+    </div>
+    <div class="error" id="error__email"></div>
+
+    <div class="token-Wrapper">
+      <div id="text" class="token">000000</div>
+      <button id="send" class="send" onclick="sendMessage()" disabled>인증번호 전송</button>
+    </div>
+    <div class="token-Wrapper">
+       <div id="clock" class="token">3:00
+
+      </div>
+      <button id="finish" class="submit" onclick="submitMessage()" disabled>인증확인
+
+      </button>
+    </div>
+    
+    <div class="error" id="error__email"></div>
+    <div class="location_wrapper">
+      <select class="location" id="locations">
+        <option disabled selected>지역을 선택하세요</option>
+        <option>서울</option>
+        <option>부산</option>
+        <option>경기</option>
+      </select>
+
+    </div>
+    <div class="error" id="error__location"></div>
+
+    <div class="gender_wrapper">
+      <div class="gender">
+        <input type="radio" id="gender_man">남
+      </div>
+      
+      <div class="gender">
+        <input type="radio" id="gender_woman">여
+      </div>
+    </div>
+    <div class="error" id="error__gender"></div>
+
+
+    <div class="divLine"></div>
+    
+    <div class="footer">
+      <button id=submitButton class="submitbutton" onclick="submit()" disabled>가입하기</button>
+    </div>
+
+
+  </div>
+</body>
+</html>
